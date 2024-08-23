@@ -241,28 +241,14 @@ body {
     animation-iteration-count: infinite;
 }
 @keyframes bgcolor {
-    /* 0% {
-        background-color: #ffe4fd;
+    0% {
+        background-color: #f2cfc7;
     }
-
-    20% {
-        background-color: #ffeade;
-    } */
-
-    40% {
-        background-color: #fffed7;
+    50% {
+        background-color: #f1ecff;
     }
-
-    /* 60% {
-        background-color: #efffde;
-    }
-
-    80% {
-        background-color: #efddff;
-    } */
-
     100% {
-        background-color: #ffffff;
+        background-color: #f2cfc7;
     }
 }
 #section1 .inner .photo .bg_box.hi2 {
@@ -271,29 +257,15 @@ body {
     animation-iteration-count: infinite;
 }
 @keyframes bgcolor2 {
-    /* 0% {
-        background-color: #efffde;
-    } */
-    
-    20% {
-        background-color: #efddff;
+    0% {
+        background-color: #f1ecff;
     }
-    
-    /* 40% {
-        background-color: #ffffff;
+    50% {
+        background-color: #f2cfc7;
     }
-    
-    60% {
-        background-color: #ffe4fd;
-    } */
-    
-    80% {
-        background-color: #ffeade;
+    100% {
+        background-color: #f1ecff;
     }
-    
-    /* 100% {
-        background-color: #fffed7;
-    } */
 }
 
 #section1 .inner .photo .box {
@@ -442,9 +414,6 @@ body {
     background-color: #ffffa2;
     border-radius: 0;
     animation: bgcolor3 6s infinite;
-    /* animation-name: bgcolor3;
-    animation-duration: 4s;
-    animation-iteration-count: infinite; */
 }
 @keyframes bgcolor3 {
     0% {
@@ -857,7 +826,195 @@ button.btn:active::before {
 #section5 {
     background: url(../img/bg.jpg);
 }
+#section5 h1 {
+    color: #535e76;
+    font-size: 90px;
+    text-align: center;
+    text-shadow: 4px 4px 1px #ffeebc;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 50px;
+}
+#section5 .inner {
+    max-width: 1440px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+#section5 .inner .contact {
+    width: 40%;
+    height: 700px;
+    position: relative;
+}
+#section5 .inner .contact .bg_box,
+#section5 .inner .contact .box {
+    width: 100%;
+    height: 650px;
+    border: 3px solid #333;
+    position: absolute;
+}
+#section5 .inner .contact .bg_box:nth-child(1) {
+    background-color: #b8dbd9;
+    top: 2%;
+    left: 4%;
+    z-index: 2;
+}
+#section5 .inner .contact .bg_box:nth-child(2) {
+    background-color: #b8dbd9;
+    top: 4%;
+    left: 8%;
+    z-index: 1;
+}
+
+#section5 .inner .contact .bg_box.hi {
+    animation-name: bgcolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#section5 .inner .contact .bg_box.hi2 {
+    animation-name: bgcolor2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+#section5 .inner .contact .box {
+    width: 100%;
+    background-color: #e5eef1;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+#section5 .inner .contact .box .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #FFF;
+    border: none;
+    border-bottom: 3px solid #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#section5 .inner .contact .box .top span {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+#section5 .inner .contact .box .top span div {
+    margin: 10px 5px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #333;
+    background-color: #ffc2c2;
+}
+#section5 .inner .contact .box .photo_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'CookieRun-Regular';
+}
+#section5 .inner .contact .box .contact_form {
+    width: 60%;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+}
+#section5 .inner .contact .box .contact_form input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+#section5 .inner .contact .box .contact_form .mail_box {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 1%;
+}
+#section5 .inner .contact .box .contact_form #mail, 
+#section5 .inner .contact .box .contact_form #domain-txt {
+    width: 46%;
+    display: block;
+}
+#section5 .inner .contact .box .contact_form #domain-txt {
+    display: block;
+    margin-left: auto;
+}
+#section5 .inner .contact .box .contact_form span {
+    display: block;
+    padding: 20px 0;
+}
+#section5 .inner .contact .box .contact_form #domain-list {
+    width: 46%;
+    display: block;
+    margin-left: auto;
+}
+#section5 .inner .contact .box .contact_form input[type=submit] {
+    background-color: #ff9999;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+#section5 .inner .contact .box .contact_form input[type=submit]:hover {
+    background-color: #ffffa2;
+    color: #333;
+}
 
 
 
+#section5 .profile {
+    width: 40%;
+    margin: auto 0;
+    font-size: 22px;
+    position: relative;
+}
+#section5 .profile ul li {
+    margin-bottom: 20px;
+}
+#section5 .profile ul li:nth-child(2n) {
+    margin-bottom: 40px;
+}
+#section5 .profile ul li:last-child {
+    margin-bottom: 0;
+}
+#section5 .profile ul li.josefin {
+    font-family: "Josefin Sans", sans-serif;
+}
+#section5 .profile ul li.antic {
+    font-family: "Antic Slab", serif; 
+}
 
+#section5 .profile figure {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    width: 200px;
+    height: 200px;
+}
+#section5 .profile figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
