@@ -1039,7 +1039,9 @@ button.btn:active::before {
 #fp-nav.fp-right ul li:last-child {
     display: none;
 }
-
+.footer {
+    background: url(../img/bg.jpg);
+}
 .footer .fp-auto-height {
     height: auto !important;
 }
@@ -1054,6 +1056,7 @@ button.btn:active::before {
     justify-content: center;
     text-align: center;
     margin: auto auto;
+    gap: 50px;
     color: #333;
     font-size: 13px;
 }
