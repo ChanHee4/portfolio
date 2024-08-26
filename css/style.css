@@ -328,9 +328,17 @@ body {
 }
 
 
-
+#section1 .inner .profile {
+    width: 50%;
+    display: block;
+    margin: auto 0;
+}
 #section1 .inner .profile ul{
     margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
+    
 }
 #section1 .inner .profile ul:last-child {
     margin-bottom: 0;
@@ -341,15 +349,21 @@ body {
     font-weight: bold;
 }
 #section1 .inner .profile ul li:first-child{
-    font-size: 30px;
     font-family: "Josefin Sans", sans-serif;
-    margin-bottom: 10px;
     font-weight: bold;
 }
-#section1 .inner .profile ul li:nth-child(n+2){
+#section1 .inner .profile .education {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+#section1 .inner .profile .education li:first-child {
+    margin-bottom: 15px;
+}
+#section1 .inner .profile .education .edu_wrap {
+    font-weight: normal !important;
     font-size: 20px;
 }
-
 
 
 #section2 {
