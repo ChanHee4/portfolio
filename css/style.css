@@ -424,14 +424,14 @@ body {
     margin: 1% auto;
     background-color: #ffffa2;
     border-radius: 0;
-    animation: bgcolor3 6s infinite;
+    animation: bgcolor3 8s infinite;
 }
 @keyframes bgcolor3 {
     0% {
         background-color: #ffffa2;
     }
     25% {
-        background-color: #ffffa2;
+        background-color: #ff9999;
     }
     50% {
         background-color: #ffffa2;
